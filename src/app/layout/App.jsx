@@ -9,9 +9,9 @@ class App extends Component {
       <div>
         <h1>Re-events</h1>
         <Fragment>
-          <NavBar></NavBar>
+          <NavBar/>
           <Container className="main">
-            <EventDashboard></EventDashboard>
+            <EventDashboard/>
           </Container>
         </Fragment>
       </div>

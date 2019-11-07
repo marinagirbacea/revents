@@ -7,3 +7,5 @@ export const PeopleDashboard = () => {
         </div>
     )
 }
+
+export default PeopleDashboard;

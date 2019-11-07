@@ -7,3 +7,5 @@ export const BasicPage = () => {
         </div>
     )
 }
+
+export default BasicPage;

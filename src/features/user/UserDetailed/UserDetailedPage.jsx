@@ -7,3 +7,5 @@ export const UserDetailedPage = () => {
         </div>
     )
 }
+
+export default UserDetailedPage;

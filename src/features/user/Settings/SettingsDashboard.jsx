@@ -7,3 +7,5 @@ export const SettingsDashboard = () => {
         </div>
     )
 }
+
+export default SettingsDashboard;

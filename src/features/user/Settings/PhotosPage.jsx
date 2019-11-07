@@ -7,3 +7,5 @@ export const PhotosPage = () => {
         </div>
     )
 }
+
+export default PhotosPage;

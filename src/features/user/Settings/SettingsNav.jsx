@@ -7,3 +7,5 @@ export const SettingsNav = () => {
         </div>
     )
 }
+
+export default SettingsNav;

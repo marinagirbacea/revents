@@ -12,23 +12,28 @@ import UserDetailedPage from "../../features/user/UserDetailed/UserDetailedPage"
 import EventForm from "../../features/event/EventForm/EventForm";
 import SettingsDashboard from "../../features/user/Settings/SettingsDashboard";
 
-
 class App extends Component {
   render() {
     return (
       <div>
-        <h1>Re-events</h1>
         <Fragment>
-          <NavBar/>
-          <Container className="main">
-          <Route exact path='/' component={HomePage}/>
-          <Route path='/events' component={EventDashboard}/>
-          <Route path='/events/:id' component={EventDetailedPage}/>
-          <Route path='/people' component={PeopleDashboard}/>
-          <Route path='/profile/:id' component={UserDetailedPage}/>
-          <Route path='/settings' component={SettingsDashboard}/>
-          <Route path='/createEvent' component={EventForm}/>
-          </Container>
+          <Route exact path='/' component={HomePage} />
+          <Route
+            path='/(.+)'
+            render={() => (
+              <Fragment>
+                <NavBar />
+                <Container className='main'>
+                  <Route path='/events' component={EventDashboard} />
+                  <Route path='/events/:id' component={EventDetailedPage} />
+                  <Route path='/people' component={PeopleDashboard} />
+                  <Route path='/profile/:id' component={UserDetailedPage} />
+                  <Route path='/settings' component={SettingsDashboard} />
+                  <Route path='/createEvent' component={EventForm} />
+                </Container>
+              </Fragment>
+            )}
+          />
         </Fragment>
       </div>
     );
